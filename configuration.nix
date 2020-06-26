@@ -61,7 +61,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
 	wget vim mc htop screenfetch hplipWithPlugin ntfs3g
-	kdeconnect okular gwenview kcolorchooser kget ktorrent
+	kcalc kdeconnect okular gwenview kcolorchooser kget ktorrent
 	libreoffice
   ];
 
@@ -143,7 +143,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.lilicenco = {
   	isNormalUser = true;
-	extraGroups = ["networkmanager" "sudo" "wheel" "user-with-access-to-virtualbox" ]; # Enable ‘sudo’ for the user.
+	extraGroups = ["lpadmin" "networkmanager" "sudo" "wheel" "user-with-access-to-virtualbox" ]; # Enable ‘sudo’ for the user.
   };
 
   # Enable Automatic Upgrades
